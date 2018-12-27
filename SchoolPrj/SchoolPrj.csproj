@@ -86,6 +86,12 @@
     <Compile Include="PL\EditClass.Designer.cs">
       <DependentUpon>EditClass.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\EditDivision.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\EditDivision.Designer.cs">
+      <DependentUpon>EditDivision.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PL\EditClass.resx">
       <DependentUpon>EditClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\EditDivision.resx">
+      <DependentUpon>EditDivision.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>

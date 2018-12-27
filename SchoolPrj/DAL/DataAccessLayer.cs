@@ -66,16 +66,21 @@ namespace SchoolPrj.DAL
             return da;
         }
 
-        internal int SelectDataInt(string storedProcedure)
+        internal int SelectDataInt(string storedProcedure,SqlParameter[] param)
         {
             SqlCommand sqlCommand = new SqlCommand();
             sqlCommand.Connection = sqlConnection;
             sqlCommand.CommandType = CommandType.StoredProcedure;
             sqlCommand.CommandText = storedProcedure;
 
-            Open();
+            if (param != null)
+            {
+                sqlCommand.Parameters.AddRange(param);
+            }
+
+            
             int id = Convert.ToInt16(sqlCommand.ExecuteScalar());
-            Close();
+            
             return id;
         }
 

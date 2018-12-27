@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 using System.Windows.Forms;
 
 namespace SchoolPrj.PL
@@ -18,15 +19,21 @@ namespace SchoolPrj.PL
         private void btnSave_Click(object sender, EventArgs e)
         {
             BL.CLS_Users usr = new BL.CLS_Users();
-            usr.AddUser(txtUserName.Text,txtPassword.Text);
-            DialogResult result= MessageBox.Show("تم الحفظ. هل تريد إضافة مستخدم جديد؟","حفظ",MessageBoxButtons.YesNo);
-            if (result == DialogResult.Yes)
+            DataTable dt = usr.VerifiyAddUser(txtUserName.Text);
+            if (dt.Rows[0][0].ToString().Equals("0"))
             {
-                txtUserName.Text = "";
-                txtPassword.Text = "";
+                usr.AddUser(txtUserName.Text, txtPassword.Text);
+                DialogResult result = MessageBox.Show("تم الحفظ. هل تريد إضافة مستخدم جديد؟", "حفظ", MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes)
+                {
+                    txtUserName.Text = "";
+                    txtPassword.Text = "";
+                }
+                else
+                    Close();
             }
             else
-                Close();
+                MessageBox.Show("الاسم موجود مسبقاً");
         }
     }
 }

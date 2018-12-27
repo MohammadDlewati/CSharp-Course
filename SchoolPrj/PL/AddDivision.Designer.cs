@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.txtClassName = new System.Windows.Forms.TextBox();
+            this.txtDivisionName = new System.Windows.Forms.TextBox();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -46,13 +46,13 @@
             this.label1.TabIndex = 18;
             this.label1.Text = " الشعبة";
             // 
-            // txtClassName
+            // txtDivisionName
             // 
-            this.txtClassName.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtClassName.Location = new System.Drawing.Point(58, 142);
-            this.txtClassName.Name = "txtClassName";
-            this.txtClassName.Size = new System.Drawing.Size(289, 27);
-            this.txtClassName.TabIndex = 17;
+            this.txtDivisionName.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDivisionName.Location = new System.Drawing.Point(58, 142);
+            this.txtDivisionName.Name = "txtDivisionName";
+            this.txtDivisionName.Size = new System.Drawing.Size(289, 27);
+            this.txtDivisionName.TabIndex = 17;
             // 
             // btnClose
             // 
@@ -63,6 +63,7 @@
             this.btnClose.TabIndex = 16;
             this.btnClose.Text = "خروج";
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnSave
             // 
@@ -73,6 +74,7 @@
             this.btnSave.TabIndex = 15;
             this.btnSave.Text = "حفظ";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // label2
             // 
@@ -101,7 +103,7 @@
             this.Controls.Add(this.cmbClass);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtClassName);
+            this.Controls.Add(this.txtDivisionName);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnSave);
             this.Name = "AddDivision";
@@ -116,7 +118,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtClassName;
+        private System.Windows.Forms.TextBox txtDivisionName;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Label label2;

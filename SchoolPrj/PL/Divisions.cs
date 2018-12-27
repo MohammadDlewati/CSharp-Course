@@ -38,5 +38,23 @@ namespace SchoolPrj.PL
         {
             Close();
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("هل أنت متأكد من الحذف", "حذف", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                BL.CLS_Division div = new BL.CLS_Division();
+                div.DeleteDivision(int.Parse(dtg.SelectedRows[0].Cells[0].Value.ToString()));
+                RefreshTable();
+            }
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            EditDivision ed = new EditDivision(int.Parse(dtg.SelectedRows[0].Cells[0].Value.ToString()), dtg.SelectedRows[0].Cells[1].Value.ToString(), int.Parse(dtg.SelectedRows[0].Cells[2].Value.ToString()));
+            ed.ShowDialog();
+            RefreshTable();
+        }
     }
 }

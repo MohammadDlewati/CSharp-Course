@@ -20,6 +20,17 @@ namespace SchoolPrj.BL
             return dt;
         }
 
+        public DataTable VerifiyAddUser(string Username)
+        {
+            SqlParameter[] param = new SqlParameter[1];
+            param[0] = new SqlParameter("@UserName", SqlDbType.NVarChar, 100);
+            param[0].Value = Username;
+            
+            dal.Open();
+            DataTable dt = dal.SelectData("VerifiyAddUser", param);
+            dal.Close();
+            return dt;
+        }
         public DataTable AllUser()
         {
             dal.Open();
