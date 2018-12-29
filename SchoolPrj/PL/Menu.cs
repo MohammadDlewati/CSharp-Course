@@ -44,5 +44,11 @@ namespace SchoolPrj.PL
             Divisions div = new Divisions();
             div.ShowDialog();
         }
+
+        private void btnSubject_Click(object sender, EventArgs e)
+        {
+            SelectClass sc = new SelectClass();
+            sc.ShowDialog();
+        }
     }
 }

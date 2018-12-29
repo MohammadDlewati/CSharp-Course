@@ -32,6 +32,7 @@
             this.btnUsers = new System.Windows.Forms.Button();
             this.btnClasses = new System.Windows.Forms.Button();
             this.btnDivision = new System.Windows.Forms.Button();
+            this.btnSubject = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnClose
@@ -78,11 +79,23 @@
             this.btnDivision.UseVisualStyleBackColor = true;
             this.btnDivision.Click += new System.EventHandler(this.btnDivision_Click);
             // 
+            // btnSubject
+            // 
+            this.btnSubject.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSubject.Location = new System.Drawing.Point(12, 177);
+            this.btnSubject.Name = "btnSubject";
+            this.btnSubject.Size = new System.Drawing.Size(142, 39);
+            this.btnSubject.TabIndex = 4;
+            this.btnSubject.Text = "المواد";
+            this.btnSubject.UseVisualStyleBackColor = true;
+            this.btnSubject.Click += new System.EventHandler(this.btnSubject_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(471, 348);
+            this.Controls.Add(this.btnSubject);
             this.Controls.Add(this.btnDivision);
             this.Controls.Add(this.btnClasses);
             this.Controls.Add(this.btnUsers);
@@ -103,5 +116,6 @@
         private System.Windows.Forms.Button btnUsers;
         private System.Windows.Forms.Button btnClasses;
         private System.Windows.Forms.Button btnDivision;
+        private System.Windows.Forms.Button btnSubject;
     }
 }

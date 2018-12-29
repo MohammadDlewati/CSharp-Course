@@ -40,59 +40,57 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(347, 127);
+            this.label2.Location = new System.Drawing.Point(33, 118);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(94, 19);
-            this.label2.TabIndex = 11;
+            this.label2.TabIndex = 17;
             this.label2.Text = "كلمة المرور";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(317, 39);
+            this.label1.Location = new System.Drawing.Point(33, 33);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(124, 19);
-            this.label1.TabIndex = 10;
+            this.label1.TabIndex = 16;
             this.label1.Text = "اسم المستخدم";
             // 
             // txtPassword
             // 
             this.txtPassword.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(223, 167);
+            this.txtPassword.Location = new System.Drawing.Point(37, 159);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(214, 27);
-            this.txtPassword.TabIndex = 9;
+            this.txtPassword.TabIndex = 15;
             // 
             // txtUserName
             // 
             this.txtUserName.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUserName.Location = new System.Drawing.Point(223, 79);
+            this.txtUserName.Location = new System.Drawing.Point(37, 71);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(214, 27);
-            this.txtUserName.TabIndex = 8;
+            this.txtUserName.TabIndex = 14;
             // 
             // btnClose
             // 
             this.btnClose.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.Location = new System.Drawing.Point(43, 146);
+            this.btnClose.Location = new System.Drawing.Point(302, 128);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(125, 45);
-            this.btnClose.TabIndex = 7;
+            this.btnClose.TabIndex = 13;
             this.btnClose.Text = "خروج";
             this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnSave
             // 
             this.btnSave.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(43, 79);
+            this.btnSave.Location = new System.Drawing.Point(302, 61);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(125, 45);
-            this.btnSave.TabIndex = 6;
+            this.btnSave.TabIndex = 12;
             this.btnSave.Text = "حفظ";
             this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // EditUser
             // 
@@ -107,7 +105,8 @@
             this.Controls.Add(this.btnSave);
             this.Name = "EditUser";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Text = "EditUser";
+            this.RightToLeftLayout = true;
+            this.Text = "تعديل مستخدم";
             this.ResumeLayout(false);
             this.PerformLayout();
 
