@@ -35,7 +35,7 @@ namespace SchoolPrj.PL
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            AddSubject sub = new AddSubject(IdClass);
+            AddEditSubject sub = new AddEditSubject("Add", 0, "", 0, 0, IdClass);
             sub.ShowDialog();
             RefreshTable();
         }
@@ -43,6 +43,24 @@ namespace SchoolPrj.PL
         private void btnClose_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            AddEditSubject sub = new AddEditSubject("Edit", int.Parse(dtg.CurrentRow.Cells[0].Value.ToString()), dtg.CurrentRow.Cells[1].Value.ToString(), int.Parse(dtg.CurrentRow.Cells[2].Value.ToString()), int.Parse(dtg.CurrentRow.Cells[3].Value.ToString()), IdClass);
+            sub.ShowDialog();
+            RefreshTable();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("هل أنت متأكد من الحذف", "حذف", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                BL.CLS_Subject div = new BL.CLS_Subject();
+                div.DeleteSubject(int.Parse(dtg.SelectedRows[0].Cells[0].Value.ToString()));
+                RefreshTable();
+            }
         }
     }
 }

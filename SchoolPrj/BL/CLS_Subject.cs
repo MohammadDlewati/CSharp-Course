@@ -80,20 +80,24 @@ namespace SchoolPrj.BL
 
             return IdClass;
         }
-        public void EditSubject(int IdSubject,string NameSubject, int Mark, int LimtSuccess)
+        public void EditSubject(int IdSubject,string NameSubject, int Mark, int LimtSuccess,int IdClass)
         {
-            SqlParameter[] param = new SqlParameter[4];
+            SqlParameter[] param = new SqlParameter[5];
             param[0] = new SqlParameter("@IdSubject", SqlDbType.Int);
             param[0].Value = IdSubject;
 
             param[1] = new SqlParameter("@NameSubject", SqlDbType.NVarChar, 50);
             param[1].Value = NameSubject;
 
-            param[2] = new SqlParameter("@’Mark", SqlDbType.Int);
+            param[2] = new SqlParameter("@Mark", SqlDbType.Int);
             param[2].Value = Mark;
 
             param[3] = new SqlParameter("@LimtSuccess", SqlDbType.Int);
             param[3].Value = LimtSuccess;
+
+            param[4] = new SqlParameter("@IdClass", SqlDbType.Int);
+            param[4].Value = IdClass;
+
             dal.Open();
             dal.ExecuteCommand("EditSubject", param);
             dal.Close();

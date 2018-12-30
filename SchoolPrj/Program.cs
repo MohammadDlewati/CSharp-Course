@@ -16,8 +16,8 @@ namespace SchoolPrj
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Users());
-            Application.Run(new PL.SelectClass());
+            Application.Run(new Users());
+            //Application.Run(new PL.SelectClass());
         }
     }
 }

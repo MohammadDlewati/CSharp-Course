@@ -1,6 +1,6 @@
 ﻿namespace SchoolPrj.PL
 {
-    partial class AddSubject
+    partial class AddEditSubject
     {
         /// <summary>
         /// Required designer variable.
@@ -114,7 +114,7 @@
             this.label3.TabIndex = 28;
             this.label3.Text = "حد النجاح";
             // 
-            // AddSubject
+            // AddEditSubject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -127,7 +127,7 @@
             this.Controls.Add(this.txtMark);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnSave);
-            this.Name = "AddSubject";
+            this.Name = "AddEditSubject";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

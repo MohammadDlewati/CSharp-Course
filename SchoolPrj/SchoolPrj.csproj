@@ -63,11 +63,11 @@
     <Compile Include="PL\AddDivision.Designer.cs">
       <DependentUpon>AddDivision.cs</DependentUpon>
     </Compile>
-    <Compile Include="PL\AddSubject.cs">
+    <Compile Include="PL\AddEditSubject.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PL\AddSubject.Designer.cs">
-      <DependentUpon>AddSubject.cs</DependentUpon>
+    <Compile Include="PL\AddEditSubject.Designer.cs">
+      <DependentUpon>AddEditSubject.cs</DependentUpon>
     </Compile>
     <Compile Include="PL\AddUser.cs">
       <SubType>Form</SubType>
@@ -143,8 +143,8 @@
     <EmbeddedResource Include="PL\AddDivision.resx">
       <DependentUpon>AddDivision.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PL\AddSubject.resx">
-      <DependentUpon>AddSubject.cs</DependentUpon>
+    <EmbeddedResource Include="PL\AddEditSubject.resx">
+      <DependentUpon>AddEditSubject.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\AddUser.resx">
       <DependentUpon>AddUser.cs</DependentUpon>

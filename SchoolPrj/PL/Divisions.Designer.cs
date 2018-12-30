@@ -43,6 +43,7 @@
             this.dtg.Location = new System.Drawing.Point(185, 71);
             this.dtg.Name = "dtg";
             this.dtg.ReadOnly = true;
+            this.dtg.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtg.Size = new System.Drawing.Size(598, 308);
             this.dtg.TabIndex = 14;
             // 
