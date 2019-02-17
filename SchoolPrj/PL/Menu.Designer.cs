@@ -33,6 +33,7 @@
             this.btnClasses = new System.Windows.Forms.Button();
             this.btnDivision = new System.Windows.Forms.Button();
             this.btnSubject = new System.Windows.Forms.Button();
+            this.btnStudent = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnClose
@@ -90,11 +91,23 @@
             this.btnSubject.UseVisualStyleBackColor = true;
             this.btnSubject.Click += new System.EventHandler(this.btnSubject_Click);
             // 
+            // btnStudent
+            // 
+            this.btnStudent.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStudent.Location = new System.Drawing.Point(187, 12);
+            this.btnStudent.Name = "btnStudent";
+            this.btnStudent.Size = new System.Drawing.Size(142, 39);
+            this.btnStudent.TabIndex = 5;
+            this.btnStudent.Text = " الطلاب";
+            this.btnStudent.UseVisualStyleBackColor = true;
+            this.btnStudent.Click += new System.EventHandler(this.btnStudent_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(471, 348);
+            this.Controls.Add(this.btnStudent);
             this.Controls.Add(this.btnSubject);
             this.Controls.Add(this.btnDivision);
             this.Controls.Add(this.btnClasses);
@@ -117,5 +130,6 @@
         private System.Windows.Forms.Button btnClasses;
         private System.Windows.Forms.Button btnDivision;
         private System.Windows.Forms.Button btnSubject;
+        private System.Windows.Forms.Button btnStudent;
     }
 }

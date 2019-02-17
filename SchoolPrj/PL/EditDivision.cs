@@ -12,7 +12,8 @@ namespace SchoolPrj.PL
         {
             InitializeComponent();
             BL.CLS_Division div = new BL.CLS_Division();
-            txtClass.Text=div.Div_Class(IdClass);
+            Setting.CLS_Getting Gett = new Setting.CLS_Getting();
+            txtClass.Text=Gett.Get_Class(IdClass);
             txtDivisionName.Text = Division;
             id = IdDivision;
         }
@@ -20,10 +21,11 @@ namespace SchoolPrj.PL
         private void btnSave_Click(object sender, EventArgs e)
         {
             BL.CLS_Division div = new BL.CLS_Division();
+            Setting.CLS_Getting Gett = new Setting.CLS_Getting();
             DataTable dt = div.VerifiyDivision(txtDivisionName.Text, txtClass.Text);
             if (dt.Rows[0][0].ToString().Equals("0"))
             {
-                int IdClass = div.Div_IdClass(txtClass.Text);
+                int IdClass = Gett.Get_IdClass(txtClass.Text);
                 div.EditDivision(id, txtDivisionName.Text, IdClass);
                 Close();
             }

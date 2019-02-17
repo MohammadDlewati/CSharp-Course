@@ -50,5 +50,11 @@ namespace SchoolPrj.PL
             SelectClass sc = new SelectClass();
             sc.ShowDialog();
         }
+
+        private void btnStudent_Click(object sender, EventArgs e)
+        {
+            Student std = new Student();
+            std.ShowDialog();
+        }
     }
 }

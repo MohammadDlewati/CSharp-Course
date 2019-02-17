@@ -81,6 +81,7 @@
             this.btnClose.TabIndex = 13;
             this.btnClose.Text = "خروج";
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnSave
             // 
@@ -106,6 +107,7 @@
             this.Name = "EditUser";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "تعديل مستخدم";
             this.ResumeLayout(false);
             this.PerformLayout();

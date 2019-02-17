@@ -26,6 +26,5 @@ namespace SchoolPrj.PL
         {
             Close();
         }
-
     }
 }
